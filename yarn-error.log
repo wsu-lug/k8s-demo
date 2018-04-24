@@ -1,0 +1,32 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\m\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js start
+
+PATH: 
+  C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\ImageMagick-6.9.9-Q8;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\m\Documents\Path;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Go\bin;C:\Program Files\Git LFS;C:\Users\m\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\m\AppData\Local\Programs\Python\Python36\;C:\Users\m\AppData\Local\Microsoft\WindowsApps;C:\Users\m\AppData\Local\GitHubDesktop\bin;C:\Users\m\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code Insiders\bin;C:\Users\m\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\m\AppData\Local\Keybase\;C:\Program Files (x86)\Nmap;C:\Program Files\rti_connext_dds-5.3.0\bin;C:\Program Files\PostgreSQL\10\bin;C:\Users\m\AppData\Local\hyper\app-2.0.0-canary14\resources\bin;C:\Users\m\go\bin;;C:\Program Files\Microsoft VS Code\bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.3.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "C:\\Users\\m\\Code\\react-test"
+      at new MessageError (C:\Users\m\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at C:\Users\m\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:40048:15
+      at Generator.next (<anonymous>)
+      at step (C:\Users\m\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\m\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13
+      at <anonymous>
