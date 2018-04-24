@@ -28,5 +28,6 @@ func main() {
 		w.WriteHeader(200)
 		fmt.Fprintf(w, "%s", j)
 	})
+	fmt.Println("serving...")
 	http.ListenAndServe("0.0.0.0:8080", r)
 }
