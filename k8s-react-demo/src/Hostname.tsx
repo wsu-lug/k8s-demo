@@ -25,11 +25,12 @@ export class Hostname extends React.Component<{},IHostnameState> {
 
     private getInitState():IHostnameState {
 
-        axios.get("https://api.github.com/users/matmerr").then(response => {
-            this.setState({hostname: response.data.blog})
-        
+        axios.get("http://localhost:8080").then(response => {
+            this.setState({hostname: response.data.hostname})
+        }).catch(err => {
+            this.setState({hostname: err.message})
         })
-        return {hostname: "unable to contact backend"}
+        return {hostname: "contacting backend..."}
     }
 
 
