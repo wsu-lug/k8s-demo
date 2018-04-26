@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: k8s-react-demo
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: k8s-react-demo
+    spec:
+      containers:
+        - name: k8s-react-demo
+          image: matmerr/k8s-react-demo
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80

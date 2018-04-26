@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: k8s-react-demo
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+  selector:
+    app: k8s-react-demo
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: k8s-go-demo
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+  selector:
+    app: k8s-go-demo

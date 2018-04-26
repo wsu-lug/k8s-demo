@@ -1,7 +1,6 @@
 import axios from 'axios';
 import * as React from "react";
 
-
 interface IHostnameState {
     hostname: string;
 }
@@ -21,18 +20,12 @@ export class Hostname extends React.Component<{},IHostnameState> {
         )
     }
 
-
-
     private getInitState():IHostnameState {
-
-        axios.get("http://localhost:8080").then(response => {
+        axios.get("http://k8s-go-demo.merr.co").then(response => {
             this.setState({hostname: response.data.hostname})
         }).catch(err => {
             this.setState({hostname: err.message})
         })
         return {hostname: "contacting backend..."}
     }
-
-
-
 }

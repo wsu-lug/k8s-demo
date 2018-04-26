@@ -14,7 +14,6 @@ type host struct {
 }
 
 func main() {
-
 	r := httprouter.New()
 	r.GET("/", func(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 		hostnamestr, _ := os.Hostname()
@@ -29,5 +28,5 @@ func main() {
 		fmt.Fprintf(w, "%s", j)
 	})
 	fmt.Println("serving...")
-	http.ListenAndServe("0.0.0.0:8080", r)
+	http.ListenAndServe("0.0.0.0:80", r)
 }

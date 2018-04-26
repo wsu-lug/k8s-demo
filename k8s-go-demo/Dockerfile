@@ -7,5 +7,5 @@ RUN go build -o /app/k8s-demo main.go
 FROM ubuntu
 WORKDIR /app
 COPY --from=go-build /app/k8s-demo .
-EXPOSE 8080
+EXPOSE 80
 CMD ["./k8s-demo"]

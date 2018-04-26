@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: k8s-go-demo
+spec:
+  replicas: 10
+  template:
+    metadata:
+      labels:
+        app: k8s-go-demo
+    spec:
+      containers:
+        - name: k8s-go-demo
+          image: matmerr/k8s-go-demo
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
